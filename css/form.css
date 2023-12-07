@@ -1,0 +1,45 @@
+@import "global.css";
+@import "main.css";
+
+.web-form {
+  width: 75%;
+  position: relative;
+  margin: auto;
+  background-color: #fff2d5;
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.web-form div {
+  margin-top: 10px;
+}
+
+#age {
+  width: 100px;
+}
+
+#date {
+  width: 150px;
+}
+
+#custom {
+  margin-top: 5px;
+}
+
+.radio,
+.checkbox {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.Submit {
+  border-color: #b67b49;
+  background-color: #b67b49;
+  color: white;
+}
+
+.submit {
+  border-color: #b67b49;
+  color: white;
+}

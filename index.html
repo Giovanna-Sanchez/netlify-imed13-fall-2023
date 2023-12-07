@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giovanna's Bakery</title>
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts CDN CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- FontAwesome CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FancyApp CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Begin Offcanvas -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            What makes us special?
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            We like to call ourselves different from other places you'll
+            typically grab a drink or lunch from, because we ensure that our
+            customers know we not only care but are sure to put our best into
+            everything served to them. Baking isn't only our nbusniess, it's our
+            passion.
+          </div>
+        </div>
+      </div>
+      <!-- End Offcanvas -->
+
+      <!-- Begin Google Icons -->
+      <div class="container text-center top-logo">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <span class="material-symbols-outlined">
+              bakery_dining
+            </span>
+            <span class="material-symbols-outlined">
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+              >
+                local_cafe
+              </a>
+            </span>
+          </div>
+          <div class="col-12 col-md-6">
+            <span id="my-google-fonts">Giovanna's Bakery</span>
+          </div>
+        </div>
+      </div>
+      <!-- Google Icons End -->
+
+      <!-- Top Navbar Begins -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--   <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse Justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu</a></li>
+                  <li><a class="dropdown-item" href="#">Recipes</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Opportunities</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Top Navbar ends -->
+    </header>
+
+    <main>
+      <!-- Carousel Begins -->
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/Carousel/carousel-1.jpg"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Freshly baked bread awaiting you</h5>
+              <p>
+                Different sorts of bread, carefully baked to satisfy with every
+                bite
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Carousel/Carousel-2.jpg"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Whatever food your craving, at whatever time of day</h5>
+              <p>
+                Breakfast food around all thorughout the day, fresh as can be.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Carousel/carousel-3.jpg"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>A variety of food throughout the day</h5>
+              <p>
+                A slice of culutre from all around, a taste of it all in one
+                bite.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Carousel Ends -->
+
+      <!-- Font Awesome Icons-->
+      <div class="container-fluid text-center fa-row">
+        <div class="row">
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-bread-slice fa-row-icon"></i><br /><a href="#"
+              >Breads</a
+            >
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-cake-candles fa-row-icon"></i><br /><a
+              href="#"
+              >Cakes</a
+            >
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-mug-hot fa-row-icon"></i><br /><a href="#"
+              >Beverages</a
+            >
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-utensils fa-row-icon"></i><br /><a href="#"
+              >Nutrition Facts</a
+            >
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-book fa-row-icon"></i><br /><a href="#"
+              >Catering</a
+            >
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <i class="fa-solid fa-cookie-bite fa-row-icon"></i><br /><a href="#"
+              >Recipes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin First Paragraph Section -->
+      <div class="container first-paragraph-div">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="/images/square/paragraph-1.jpg"
+              alt="placeholder"
+              class="img-responsive first-paragraph-img"
+            />
+            <h2>Bread that has the warmth cooked into it</h2>
+            <p>
+              At our bakery, bread is as fresh as can be and filled with the
+              warmth you'd expect to bite into! Our bread is careful made by our
+              wwonderful bakers, filled with a variety of ingrediants that will
+              get you drooling after one bite. Each bread is made to live up to
+              it's name, each varying in different tastes from cultures all
+              around the world.
+            </p>
+            <p>
+              Here, bread is more than just bread, as baking is more than just
+              baking. We each put our hearts and passions into each loaf we make
+              hoping to share our love with every bite.
+            </p>
+            <p>
+              Our baking process is carefully carried out, ensuring that each
+              type of bread is carefully cooked for a certain amount of time
+              along with a temperature that is specialized for the variety of
+              bread.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End First Paragraph Section -->
+
+      <!-- Begin isotope Fancyapp -->
+      <div class="container isotope-filter">
+        <h2>Products</h2>
+
+        <!-- Begin Filter Buttons-->
+        <div class="button-group filters-button-group">
+          <button class="button is-checked" data-filter="*">Show All</button>
+          <button class="button is-checked" data-filter=".cakes">Cakes</button>
+          <button class="button is-checked" data-filter=".beverages">
+            Beverages
+          </button>
+          <button class="button is-checked" data-filter=".food">Food</button>
+        </div>
+        <div class="row">
+          <!-- End Filter Buttons-->
+
+          <!-- Grid Begins -->
+          <div class="grid">
+            <!-- Card -->
+            <div
+              class="col-12 col-xs-12 col-sm12- col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+            >
+              <div class="card element-item cakes" style="width: 18rem;">
+                <img
+                  src="images/cards/card-1.jpg"
+                  class="card-img-top"
+                  alt="placeholder"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cakes</h5>
+                  <p class="card-text">
+                    Have a sweet tooth? Want something for yourself or you can
+                    share around? Here you'll find all the sweet treats we serve
+                    and can even order your cake in advance!
+                  </p>
+                  <a href="#" class="btn btn-primary">Menu</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div
+              class="col-12 col-xs-12 col-sm12- col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+            >
+              <div class="card element-item beverages" style="width: 18rem;">
+                <a
+                  href="https://dummyimage.com/200x200/ccc/fff.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Single image"
+                >
+                  <img
+                    src="images/cards/card-2.jpg"
+                    class="card-img-top"
+                    alt="placeholder"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Beverages</h5>
+                  <p class="card-text">
+                    Craving something warm to sooth your soul? maybe you want
+                    something refreshing like our super sweet lemonade? Here you
+                    can find all we have to offer.
+                  </p>
+                  <a href="#" class="btn btn-primary">Menu</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div
+              class="col-12 col-xs-12 col-sm12- col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+            >
+              <div class="card element-item food" style="width: 18rem;">
+                <a
+                  href="https://dummyimage.com/200x200/ccc/fff.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Single image"
+                >
+                  <img
+                    src="images/cards/card-3.jpg"
+                    class="card-img-top"
+                    alt="placeholder"
+                  />
+                </a>
+
+                <div class="card-body">
+                  <h5 class="card-title">Foods</h5>
+                  <p class="card-text">
+                    Want more than just dessert and a drink? Take a look at our
+                    cuisine menu, your choices from a variety of food. Some of
+                    our breads pair well with our soups.
+                  </p>
+                  <a href="#" class="btn btn-primary">Menu</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- End Grid -->
+        </div>
+      </div>
+
+      <!-- End isotope Fancyapp -->
+
+      <!-- Begin Second Paragraph Section -->
+      <div class="container seond-paragraph-div">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="images/square/paragraph-2.jpg"
+              alt="placeholder"
+              class="img-responsive second-paragraph-img"
+            />
+            <h2>Help us bring our community together</h2>
+            <p>
+              One thing we care about just as much as the care we put into our
+              food, is our customers. We have our bakery open to all sorts of
+              groups of people, welcoming everyone in whether it's for a quick
+              snack or a chat and drink.
+            </p>
+            <p>
+              We are a shop that operates for majority of the day, open for our
+              9-5 customers when they need their coffee, open during lunch, and
+              open late at night to provide our nightowl college students a
+              quiet and refreshing environment to work.
+            </p>
+            <p>
+              We also offer full and part time jobs for those students and
+              anybody else. Please ask in person for a resume if you're
+              interested.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Second Paragraph Section -->
+
+      <!-- Begin headshot section -->
+      <div class="container headshot text-center">
+        <div class="row">
+          <div
+            class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <img
+              src="images/square/person-1.jpg"
+              alt="placeholder"
+              class="cropped"
+              data-aos="zoom-in"
+            />
+            <br />
+            <blockquote>
+              This place has been a lifesaver, I can focus on my studies while
+              also saving up for my classes with the flexible scheduling and the
+              discounted meals.
+              <cite>Meridth</cite>
+            </blockquote>
+          </div>
+
+          <div
+            class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <img
+              src="images/square/person-2.jpg"
+              alt="placeholder"
+              class="cropped"
+              data-aos="zoom-in"
+            />
+            <br />
+            <blockquote>
+              Working here has honestly been something I look forward too. The
+              people I work with are like family, and the customers always have
+              such great stories!
+              <cite>Sandra</cite>
+            </blockquote>
+          </div>
+
+          <div
+            class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <img
+              src="images/square/person-3.jpg"
+              alt="placeholder"
+              class="cropped"
+              data-aos="zoom-in"
+            />
+            <br />
+            <blockquote>
+              I usually come here to work on my novels weekly, the atmosphere is
+              really warm and teh coffee is just amazing! One of my favorite
+              places to meet with other freelance writers.
+              <cite>Veronica</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- End headshot section -->
+    </main>
+    <footer>
+      <!-- Begin Footer -->
+
+      <div class="container-fluid text-center footer-row">
+        <div class="row">
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Home</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Locations</a>
+          </div>
+
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Newsletter</a>
+          </div>
+
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Contact information</a>
+          </div>
+
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Menu</a>
+          </div>
+
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12">
+            <a href="https://instagram.com">
+              <i class="fa-brands fa-instagram fa-social-media"></i>
+            </a>
+            <a href="https://twitter.com">
+              <i class="fa-brands fa-twitter fa-social-media"></i>
+            </a>
+            <a href="https://youtube.com">
+              <i class="fa-brands fa-youtube fa-social-media"></i>
+            </a>
+            <a href="https://discord.com">
+              <i class="fa-brands fa-discord fa-social-media"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer-->
+    </footer>
+
+    <!-- Begin JS Section -->
+    <section>
+      <!-- jquery CDN -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <!-- Bootstrap JS CDN -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- FancyApp CDN JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+      <!-- AOS JS CDN -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!-- Isotope JS CDN-->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+      <!-- Local Javascript -->
+      <script src="/js/script.js"></script>
+    </section>
+    <!-- End JS Section -->
+  </body>
+</html>
